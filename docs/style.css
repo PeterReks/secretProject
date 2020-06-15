@@ -7,6 +7,15 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 body {
     font-family: 'Montserrat' ;
     margin:0px;
@@ -20,7 +29,7 @@ nav {
 }
 
 #logo {
-    margin-left:3%;
+    margin-left:2%;
     align-self: flex-end;
     margin-bottom:0.25%;
     text-decoration:none;
@@ -351,11 +360,97 @@ nav h1 {
       background-color:rgba(218, 165, 32, 0.4);
   }
 
+  .aboutUsText {  
+    text-align: center;
+    margin:50px auto 50px auto;
+    width:60%;
+  }
+
 
 
 @media screen and (max-width:1000px) {
     .landingBox {
         width:60vw;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .dollarSign {
+        font-weight:bold;
+    }
+  
+    .productBox {
+        width:45%;
+        padding:20px;
+        display:flex;
+        flex-direction: column;
+        box-shadow: 0.5px 3px 10px 1px;
+        margin: 10px;
+        border-top: 5px solid goldenrod;
+        border-radius:5px;
+    }
+  
+    .productBox img {
+      width:90%;
+      align-self: center;
+      border-radius:20px;
+    }
+  
+    .productBoxInfo {
+      margin-top:5px;  
+      display:flex;
+      justify-content: space-between;
+    }
+
+    .productBoxInfo h3 {
+        font-size: 1rem;
+    }
+
+    .productBoxInfo h4 {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .dollarSign {
+        font-weight:bold;
+    }
+
+    .productBoxSection {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .productBox {
+        width:80%;
+        padding:20px;
+        display:flex;
+        flex-direction: column;
+        box-shadow: 0.5px 3px 10px 1px;
+        margin: 10px;
+        border-top: 5px solid goldenrod;
+        border-radius:5px;
+    }
+  
+    .productBox img {
+      width:100%;
+      align-self: center;
+      border-radius:20px;
+    }
+  
+    .productBoxInfo {
+      margin-top:5px;  
+      display:flex;
+      justify-content: space-between;
+    }
+
+    .productBoxInfo h3 {
+        font-size: 1rem;
+    }
+
+    .productBoxInfo h4 {
+        font-size: 0.8rem;
     }
 }
 
@@ -516,6 +611,50 @@ nav h1 {
     .textAndBox img {
         width:95%;
     }
+
+    .showcase h1 {
+        font-size: 1.7rem;
+        margin-top:30px;
+        text-align: center;
+    }
+  
+    .showcase h1, p, a {
+      margin-bottom:10px;
+      text-align: center;
+    }
+  
+    .showcase p {
+        font-size:0.9rem;
+    }
+  
+    .showcase {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .showcase a {
+        background-color: goldenrod;
+        width:50%;
+        height:2.5rem;
+        text-align:center;
+        border-radius:30px;
+        line-height:2.5rem;
+        text-decoration: none;
+        color:black;
+        font-weight: bold;
+        border:1px solid black;
+        font-size: 0.8rem;
+    }
+
+    .productShowcase h1, p {
+        font-size:1.7rem;
+    }
+
+    .showProductText p  {
+        font-size:0.7rem;
+    }   
     
 }
 
@@ -539,5 +678,50 @@ nav h1 {
         font-size:0.7rem;
         background-color: rgba(230, 230, 230, 0.9);
     }
+
+    .showcase h1 {
+        font-size: 1.3rem;
+        margin-top:30px;
+        text-align: center;
+    }
+  
+    .showcase h1, p, a {
+      margin-bottom:10px;
+      text-align: center;
+    }
+  
+    .showcase p {
+        font-size:0.7rem;
+    }
+  
+    .showcase {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .showcase a {
+        background-color: goldenrod;
+        width:50%;
+        height:2.5rem;
+        text-align:center;
+        border-radius:30px;
+        line-height:2.5rem;
+        text-decoration: none;
+        color:black;
+        font-weight: bold;
+        border:1px solid black;
+        font-size: 0.6rem;
+    }
+
+    .productShowcase h1, p {
+        font-size:1.4rem;
+    }
+
+    .showProductText p  {
+        font-size:0.6rem;
+    }
+    
 
 }
