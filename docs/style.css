@@ -19,6 +19,13 @@ nav {
     display:flex;
 }
 
+#logo {
+    margin-left:3%;
+    align-self: flex-end;
+    margin-bottom:0.25%;
+    text-decoration:none;
+}
+
 nav h1 {
     color:rgb(212, 212, 212);
     align-self: flex-end;
@@ -39,8 +46,11 @@ nav h1 {
 .nav-links li a {
     color:white;
     text-decoration: none;
-    padding-right: 20px;
-    
+    padding-right: 20px;   
+}
+
+.nav-links li:hover {
+    font-weight:700;
 }
 
 .landing {
@@ -110,9 +120,10 @@ nav h1 {
     }
   
     .pricingTables {
-        margin-top:75px;
+        margin-top:50px;
         display:flex;
         justify-content: space-around;
+        margin-bottom:50px;
     }
 
   .col{  
@@ -143,7 +154,7 @@ nav h1 {
   }
   
   .price-box .header.header-green{
-    background-color:#ffbd2f;
+    background-color: goldenrod;
     color:black;
     font-weight:bold;
     ;
@@ -161,14 +172,185 @@ nav h1 {
   }
   
   .button{
-    background-color:#4CAf50;
+    background-color:goldenrod;
     border:none;
-    color:#fff;
+    color:black;
     padding: 10px 15px;
     text-align:center;
     text-decoration:none;
     font-size:18px;
   }
+
+  .textAndBox {
+      width:95vw;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 100px auto 100px auto;
+  }
+
+  .textBox {
+      width:35%;
+      text-align: center;
+  }
+
+  .textBox h1 {
+      font-size:2.5rem;
+      margin-bottom:20px;
+  }
+
+  .textAndBox img {
+      width:35%;
+  }
+
+  footer {
+      background-color:#303030;
+      height:10vh;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      padding:0px 20px 0px 20px;
+  }
+
+  .footerLinks ul {
+      display:flex;
+      list-style-type: none;
+      background-color:#303030;
+      align-items: center;;
+  }
+
+  .footerLinks ul li a {
+    padding:5px 10px 0px 0px;
+    text-decoration: none;
+    color:white;
+  }
+
+    .socials {
+    display:flex;
+    flex-direction: column;
+    }
+
+    .socials h1 {
+        font-size:1.5rem;
+        text-align:center;
+        color:white;
+        border-bottom:2px solid white;
+        margin-bottom: 5px;
+    }
+
+  .socialsSection {
+      display:flex;
+    }
+
+  .socialBox {
+      width:2rem;
+      height:auto;
+      background-color:white;
+      border-radius: 75%;
+      margin:0px 5px 0px 5px;
+      text-align: center;
+  }
+
+  .showcase h1 {
+      font-size: 2.8rem;
+      margin-top:30px;
+  }
+
+  .showcase h1, p, a {
+    margin-bottom:10px;
+  }
+
+  .showcase p {
+      font-size:1.2rem;
+  }
+
+  .showcase {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .showcase a {
+      background-color: goldenrod;
+      width:33%;
+      height:3rem;
+      text-align:center;
+      border-radius:30px;
+      line-height:3rem;
+      text-decoration: none;
+      color:black;
+      font-weight: bold;
+      border:1px solid black;
+  }
+
+  .pricesHeader {
+      text-align:center;
+      margin-top:75px;
+  }
+
+  .productBoxSection {
+      display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:50px;
+    margin-bottom:50px;
+    
+  }
+
+  .productShowcase {
+      background-image:url("productsShowcase.png");
+      height:50vh;
+      text-align:center;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      background-size:cover;
+  }
+
+  .productShowcase h1 {
+      font-size: 3rem;
+      color:white;
+      text-shadow: -1px 2px 2px black;
+  }
+
+  .productShowcase p {
+      color:white;
+      text-shadow: -0.5px 1px 1px black;
+      font-weight:bold;
+  }
+
+  .dollarSign {
+      font-weight:bold;
+  }
+
+  .productBox {
+      width:30%;
+      padding:20px;
+      display:flex;
+      flex-direction: column;
+      box-shadow: 0.5px 3px 10px 1px;
+      margin: 10px;
+      border-top: 5px solid goldenrod;
+      border-radius:5px;
+  }
+
+  .productBox img {
+    width:80%;
+    align-self: center;
+    border-radius:20px;
+  }
+
+  .productBoxInfo {
+    margin-top:5px;  
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .showProductText {
+      background-color:rgba(218, 165, 32, 0.4);
+  }
+
 
 
 @media screen and (max-width:1000px) {
@@ -219,6 +401,8 @@ nav h1 {
     nav h1 {
         position:absolute;
         z-index:3;
+        top:15px;
+        left:10px;
     }
 
     .nav-links.open {
@@ -248,9 +432,7 @@ nav h1 {
         display:block;
     }
 
-    .nav-links li:hover {
-        background-color:gray;
-    }
+    
 
     .nav-links li:nth-child(1) {
        transition: all 0.75s ease 0.2s;     
@@ -306,6 +488,34 @@ nav h1 {
       .col{
         width:100%;
       }
+
+      .textAndBox {
+        width:95vw;
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px auto 100px auto;
+    }
+  
+    .textBox {
+        width:85%;
+        text-align: center;
+    }
+
+    .textBox p {
+        font-size:0.9rem;
+    }
+  
+    .textBox h1 {
+        font-size:1.7rem;
+        margin-bottom:20px;
+        margin-top:20px;
+    }
+  
+    .textAndBox img {
+        width:95%;
+    }
     
 }
 
